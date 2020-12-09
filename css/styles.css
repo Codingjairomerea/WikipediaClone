@@ -1,11 +1,27 @@
-
+@font-face {
+    font-family: "Linux Libertine";
+    src: url('../fonts/linux_libertine/LinLibertine_R.ttf');
+    font-family: "Hoefler Text";
+    src: url('../fonts/Hoefler_Text_Regular/Hoefler_Text_Regular.ttf');
+}
 /* Functions */
-/* -----Font-Size---------- */
+/* -----Start - Font-Size---------- */
 :root {
---Font-h1: 32px;
---font-subh1: 15px;
+--font-h1: 32px;
+--font-subh1: 15.5px;
 --font-h3: 16px;
 --font-subh3: 13px;
+/* -----End - Font-Size---------- */
+/* -----Start Colors---------- */
+--color-black: #000000;
+--color-blue: #36c;
+--color-gray: #54595d;
+
+/* -----End Colors---------- */
+/* -----Start Font Family---------- */
+--font-linux: 'Hoefler Text','Linux Libertine',Georgia,'Times New Roman',Times,serif;
+
+/* -----End Font Family---------- */
 }
 /* Functions */
 
@@ -18,11 +34,39 @@ body {
 h1 {
     margin: 0;
     padding: 0;
+    font-family: var(--font-linux);
+    font-size: var(--font-h1);
+    text-transform: uppercase;
+    font-weight: normal;
 }
 
-header div {
+.logo_wikipedia {
+    height: 32px;
+    overflow: hidden;
+}
+
+.logo_wikipedia img {
+    height: 32px;
+}
+
+.title {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 115px;
+    padding-bottom: 5px;
+    justify-content: flex-end;
+}
+
+.title div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.title_container span {
+    font-size: var(--font-subh1);
+    font-family: var(--font-linux);
+    margin-top: 5%;
 }
