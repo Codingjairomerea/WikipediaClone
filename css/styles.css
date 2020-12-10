@@ -358,7 +358,7 @@ a {
 .footer_item{
     display: flex;
     height: auto;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .fot_img {
@@ -378,6 +378,7 @@ a {
 .footer_subtitle {
     font-size: var(--font-subh3);
     color: var(--color-gray);
+    line-height: 1.5;
 }
 
 .fot_img2 {
@@ -436,6 +437,8 @@ a {
     "left2 right4 right5 right6"
     "left2 right7 right8 right9"
     ". right10 right11 right12";
+    padding-top: 35px;
+    
 }
 
 .logo_footer{
@@ -481,3 +484,79 @@ a {
 .footer_right12 {
     grid-area: right12;
 }
+
+.wikimedia:hover {
+    text-decoration: underline;
+}
+
+.fot_left1 {
+    width: 42px;
+    height: 42px;
+}
+
+.footer_left1 {
+    grid-area: left1;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.footer_left2 {
+    grid-area: left2;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 12%;
+    padding-right: 14%;
+}
+
+.fot_left2 {
+    border-radius: 3px;
+    box-shadow: 0px 1px 2px #54595d;
+    width: 35px;
+    height: 35px;
+}
+
+.left2_subtitle {
+    color: var(--color-blue);
+    font-size: var(--font-subh3);
+    font-weight: bold;
+}
+
+.left2_subtitle:hover {
+    text-decoration: underline;
+}
+
+.footer_left2_span {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    
+}
+.footer_left_container {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #f8f9fa;
+}
+
+.logo_google {
+    width: 124px;
+    height: 38px;
+}
+
+.logo_apple {
+    width: 110px;
+    height: 38px;
+}
+
+.footer_two {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.text_title {
+    font-size: var(--font-subh3);  
+    color: var(--color-blue); 
