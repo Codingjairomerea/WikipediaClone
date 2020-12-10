@@ -10,6 +10,7 @@
 --font-h1: 32px;
 --font-subh1: 15.5px;
 --font-h3: 16px;
+--font-footer-title: 14px;
 --font-subh3: 13px;
 /* -----End - Font-Size---------- */
 /* -----Start Colors---------- */
@@ -351,6 +352,132 @@ a {
     height: 0;
     border: var(--border-gray-line);
     border-bottom: none;
-    margin: auto;
-    
+    margin: auto; 
+}
+
+.footer_item{
+    display: flex;
+    height: auto;
+    align-items: center;
+}
+
+.fot_img {
+    height: 47px;
+}
+
+.footer_text_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_title {
+    font-size: var(--font-footer-title);  
+    color: var(--color-blue); 
+}
+
+.footer_subtitle {
+    font-size: var(--font-subh3);
+    color: var(--color-gray);
+}
+
+.fot_img2 {
+    height: 36px;
+    width: 36px;
+}
+
+.fot_img3 {
+    height: 37px;
+    width: 37px;
+}
+
+.fot_img4 {
+    height: 37px;
+    width: 37px;
+}
+.fot_img5 {
+    height: 26px;
+    width: 47px;
+}
+.fot_img6 {
+    height: 26px;
+    width: 47px;
+}
+.fot_img7 {
+    width: 43px;
+    height: 37px;
+}
+.fot_img8 {
+    width: 42px;
+    height: 42px;
+}
+.fot_img9 {
+    width: 42px;
+    height: auto;
+}
+.fot_img10 {
+    width: 39px;
+    height: 39px;
+}
+.fot_img11 {
+    width: 42px;
+    height: 42px;
+}
+.fot_img12 {
+    width: 37px;
+    height: 37px;
+}
+
+.footer_one {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    grid-template-rows: 90px 90px 90px 90px;
+    grid-template-areas: 
+    " left1 right1 right2 right3"
+    "left2 right4 right5 right6"
+    "left2 right7 right8 right9"
+    ". right10 right11 right12";
+}
+
+.logo_footer{
+    width: 47px;
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.footer_right1 {
+    grid-area: right1;
+}
+.footer_right2 {
+    grid-area: right2;
+}
+.footer_right3 {
+    grid-area: right3;
+}
+.footer_right4 {
+    grid-area: right4;
+}
+.footer_right5 {
+    grid-area: right5;
+}
+.footer_right6 {
+    grid-area: right6;
+}
+.footer_right7 {
+    grid-area: right7;
+}
+.footer_right8 {
+    grid-area: right8;
+}
+.footer_right9 {
+    grid-area: right9;
+}
+.footer_right10 {
+    grid-area: right10;
+}
+.footer_right11 {
+    grid-area: right11;
+}
+.footer_right12 {
+    grid-area: right12;
 }
