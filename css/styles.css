@@ -27,6 +27,7 @@
 /* -----------boders------------ */
 --border-gray: 1px solid #a2a9b1;
 --border-gray-hover: 1px solid #72777d;
+--border-gray-line:1px solid #c8ccd1;
 /* -----------boders------------ */
 
 }
@@ -238,6 +239,7 @@ a {
 .input_search {
     width: 395px;
     height: 46px;
+    font-size: 16px;
     padding: 0;
     padding: 8px 64px 8px 12px;
     box-sizing: border-box;
@@ -252,7 +254,10 @@ a {
 }
 
 .input_search:focus{
-    outline-color: var(--color-blue);
+    outline-color: none;
+    outline: none;
+    border: 2px solid var(--color-blue);
+
 }
 
 .languages_input {
@@ -283,4 +288,69 @@ a {
     color: rgba(255, 255, 255, 0.87);
     font-size: 19px;
     font-size: 16px;
+}
+
+.button_left,
+.button_central,
+.button_right {
+    color: var(--color-blue);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.button_left {
+    font-size: 22px;
+    font-weight: normal;
+}
+.button_central {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.button_container {
+    width: 300px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: var(--border-gray);
+    background-color: #f8f9fa;
+    border-radius: 2px;
+}
+
+.button_container:hover {
+    background-color: white;
+}
+
+.line_left,
+.line_right {
+    width: 65px;
+    height: 0;
+    border: var(--border-gray-line);
+    border-bottom: none;
+    align-self: center;
+}
+
+.line_left {
+    margin-right: 15px;
+}
+.line_right {
+    margin-left: 15px;
+}
+
+.line_central {
+    width: 97.5%;
+    height: 0;
+    border: var(--border-gray-line);
+    border-bottom: none;
+    margin: auto;
+    
 }
