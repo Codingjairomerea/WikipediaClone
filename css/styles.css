@@ -15,15 +15,20 @@
 /* -----Start Colors---------- */
 --color-black: #000000;
 --color-blue: #36c;
+--color-blue-light:#447ff5;
 --color-gray: #54595d;
-
+--color-gray-hover:#72777d;
 /* -----End Colors---------- */
 /* -----Start Font Family---------- */
 --font-hoefler: 'Hoefler Text','Linux Libertine',Georgia,'Times New Roman',Times,serif;
 --font-linux: 'Linux Libertine', 'Hoefler Text', Georgia,'Times New Roman',Times,serif; 
 --font-apple: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
 /* -----End Font Family---------- */
+/* -----------boders------------ */
+--border-gray: 1px solid #a2a9b1;
+--border-gray-hover: 1px solid #72777d;
+/* -----------boders------------ */
+
 }
 /* Functions */
 
@@ -199,4 +204,83 @@ a {
     width: 165px;
     align-items: center;
     justify-self: start;
+}
+
+.search_bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.container_search_bar {
+    display: flex;
+    width: 540px;
+    height: 62px;
+    justify-content: center;
+}
+
+#languages {
+    width: 48.17px;
+    height: 24px;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    bottom: 0;
+    margin: auto;
+    font-family: var(--font-apple);
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    color: var(--color-gray);
+}
+
+.input_search {
+    width: 395px;
+    height: 46px;
+    padding: 0;
+    padding: 8px 64px 8px 12px;
+    box-sizing: border-box;
+    border: var(--border-gray);
+    border-radius: 2px 0 0 2px;
+    border-right: none;
+}
+
+.input_search:hover {
+    border: var(--border-gray-hover);
+    border-right: 0;
+}
+
+.input_search:focus{
+    outline-color: var(--color-blue);
+}
+
+.languages_input {
+    position: relative;
+    width: 395px;
+    height: 46px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.icon_input {
+    width: 56px;
+    height: 44px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-blue);
+    border: 1px solid var(--color-blue);
+    border-radius: 0 2px 2px 0;
+}
+
+.icon_input:hover {
+    background-color: var(--color-blue-light);
+}
+
+.icon-search {
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 19px;
+    font-size: 16px;
 }
