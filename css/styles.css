@@ -75,12 +75,12 @@ a {
 
 .title {
     display: flex;
-    flex-direction: column;
+    flex-direction: unset;
     justify-content: center;
     align-items: center;
     height: 115px;
     padding-bottom: 5px;
-    justify-content: flex-end;
+    justify-content: center;
     margin-bottom: 20px;
 }
 
@@ -575,6 +575,12 @@ a {
     display: none;
 }
 
+.logo_responsive {
+    width: 57px;
+    height: 52px;
+    display: none;
+}
+
 @media screen and (max-width: 1000px) {
     .footer_one {
         display: grid;
@@ -650,6 +656,11 @@ a {
 }
 
 @media screen and (max-width: 550px) {
+    
+    .logo_responsive {
+        display: inline;
+        margin-right: 1%;
+    }
     
     .hero_container {
         display: none;
