@@ -559,4 +559,9 @@ a {
 
 .text_title {
     font-size: var(--font-subh3);  
-    color: var(--color-blue); 
+    color: var(--color-blue);
+}
+
+.footer2_links:hover {
+    text-decoration: underline;
+}
