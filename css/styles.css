@@ -325,6 +325,7 @@ a {
     border: var(--border-gray);
     background-color: #f8f9fa;
     border-radius: 2px;
+    text-align: center;
 }
 
 .button_container:hover {
@@ -439,6 +440,10 @@ a {
     ". right10 right11 right12";
     padding-top: 35px;
     
+}
+
+.hero_container_responsive {
+    display: none;
 }
 
 .logo_footer{
@@ -564,4 +569,194 @@ a {
 
 .footer2_links:hover {
     text-decoration: underline;
+}
+
+.img_reponsive {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .footer_one {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto 90px 90px 90px 90px auto;
+        grid-template-areas: 
+        "left1 left1 left1"
+        "right1 right2 right3"
+        "right4 right5 right6"
+        "right7 right8 right9"
+        "right10 right11 right12"
+        "left2 left2 left2";
+        padding-top: 35px;
+    }
+    
+    .hero_h3 {
+        font-size: 14px;
+    }
+    
+    .footer_one {
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+        padding-top: 1.5%;
+        padding-bottom: 1.5%;
+    }
+    
+    .footer_left_container {
+        padding-right: 0;
+        padding-left: 0;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .footer_left1 {
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+    .footer_left2 {
+        padding: 0;
+    }
+    
+    .footer_responsive_container {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .logo_wiki_app {
+        display: none;
+    }
+    
+    .img_reponsive {
+        display: inline;
+        width: 25px;
+        height: 25px;
+        margin-right: 1%;
+    }
+    
+    .left2_subtitle {
+        vertical-align: super;
+    }
+    
+    .logo_wiki_app_reponsive {
+        width: 100%;
+        margin-bottom: 1%;
+    }
+    
+    .footer_two {
+        text-align: center;
+        margin-top: 4%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    
+    .hero_container {
+        display: none;
+    }
+    .hero_container_responsive {
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-template-rows: repeat(4,65px);
+        grid-template-areas: 
+        "one two three"
+        "four five six"
+        "seven eight nine"
+        "ten . .";
+        margin-top: 5%;
+    }
+    
+    .central_logo_container {
+        display: none;
+    }
+
+    .english,
+    .español,
+    .japanese,
+    .deutsch,
+    .polish,
+    .french,
+    .italian,
+    .chinese,
+    .portuguese,
+    .polski {
+        padding: 0;
+    }
+    
+    .item_left,
+    .item_right {
+    align-items: center;
+    height: auto;
+    width: auto;
+    justify-self: center;
+    padding-left: 12%;
+    padding-right: 12%;
+    text-align: center;
+}
+    
+    .container_search_bar {
+        width: 96%;
+        height: 44px;
+    }    
+
+    .languages_input {
+        width: inherit;
+    }
+
+    .input_search {
+        width: fit-content;
+        height: inherit;
+    }
+    
+    .footer_one {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 90px 90px 90px 90px 90px 90px auto;
+        grid-template-areas: 
+        "left1 left1"  
+        "right1 right2" 
+        "right3 right4" 
+        "right5 right6"
+        "right7 right8" 
+        "right9 right10" 
+        "right11 right12"
+        "left2 left2";
+        padding-top: 35px;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+    }
+    
+    .footer_two {
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        margin-top: 10%;
+    }
+    
+    .footer_left2_span {
+        padding-top: 20px;
+    }
+    
+    .footer_left1 {
+    margin-bottom: 8%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .line_left,
+    .line_right {
+        display: none;
+    }
+    
+    .line_central {
+        width: 96%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero_h3 {
+        font-size: 13px;
+    }
+    .footer_title {
+        font-size: 13px;
+    }
 }
